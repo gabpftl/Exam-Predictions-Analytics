@@ -28,16 +28,11 @@ FROM
 What's the average sleep hours for students who scored above 80?
 */
 SELECT
-    exam_score,
-    AVG(sleep_hours) as Sleep
-FROM 
+    ROUND(AVG(sleep_hours)) AS avg_sleep 
+FROM
     exams_predictions
-GROUP BY 
-    exam_score 
-HAVING 
+WHERE 
     exam_score >= 80
-ORDER BY
-    sleep 
 
 /*
 Does class attendance correlate with exam scores?
