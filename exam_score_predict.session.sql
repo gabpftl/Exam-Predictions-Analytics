@@ -1,7 +1,24 @@
+/*
+What specific question am I trying to answer?
+- Ano-anong factors ang nakakapag bigay ng good grades and bad grades
+- Ano ang pinaka effective or mas na aabsorve ng student sa method ng pag tuturo
+- Correlation ba ang high grades sa gender and ano ang edad ng isang student 
+
+Who will use this analysis?
+- Ang gagamit ng rults nito ay ang mga principal or kung sino man 
+ang namamahala sa isang school whether to improve facility or their way of teaching
+
+What does success look like?
+- Success nito for me is makapag build ng dashboard and makagawa ng recomendation on whats effective 
+and not effective methods of teaching 
+*/
+
+----------------------------------------------------------------------------------------------------------------
+
 SELECT *
 FROM
     exams_predictions
-
+LIMIT 5
 
 /*
 How many students are in each course?
@@ -66,6 +83,8 @@ GROUP BY
     sleep_quality
 HAVING
     sleep_quality = 'good'
+
+--6619 of students who have Good sleep squality only 12% of them who scored 90 and up.
 
 /*
 What's the relationship between study hours and exam scores? (Group students into study hour brackets: 0-5, 6-10, 11-15, 16+)
