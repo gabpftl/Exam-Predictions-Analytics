@@ -43,3 +43,43 @@ GROUP BY
 ```
 
 There are 20,000 Students in this analysis
+
+## How many numbers of Genders in this university
+
+```sql
+SELECT
+    gender,
+    count(student_id) as total_students
+FROM
+    exams_predictions
+GROUP BY
+    gender
+```
+
+There are 6,579 female students
+There are 6,726 who did not specify their gender
+There are 6,695 male students
+
+## Which Study Method have the best result
+
+```sql
+SELECT 
+    study_method,
+    ROUND(AVG(exam_score),2) AS avg_scores
+FROM
+    exams_predictions
+GROUP BY
+    study_method
+```
+
+STUDY METHOD 
+
+1. The most effective of teaching that has biggerst return is COACHING, averaging 68.55% percent 
+
+2. Mixed 64.24% 
+
+3. Group study 60.97% 
+
+4. Online Videos 60.15% 
+
+5. Self-Study 58.73%
