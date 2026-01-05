@@ -9,7 +9,8 @@ Project Progress
 Tools Used for this analysis
 
 - LLM: Such as Claude AI, Comet Browser(LLM Integrated Browser)
--       1. Do not hand me codes, rather i want you to help me understand how am i going to code (Do not give codes)
+        PROMPT I Engineered for this Specific Project
+        1. Do not hand me codes, rather i want you to help me understand how am i going to code (Do not give codes)
         2. I am currently learning so as much as possible explain why(Why are these the codes that may be useful to the problem) and how (How am i actually going to implement this)
         3. Help me think Critically how am going to implement the codes and what kind of codes would best fit for the problems (Still Give hints how to code, not just logic and architecture)
         4. Always remind of the basic/fundamentals so that i get to practice the basic and master it
